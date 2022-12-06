@@ -1,0 +1,274 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.left-h{
+    padding: 1rem;
+    padding-top: 1rem;
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column; 
+    
+    
+}
+ 
+.right-h{
+    flex: 1;
+    position: relative;
+    background-color: orange;
+}
+
+.add{
+    margin-top: 4rem;
+    background-color: rgb(14, 53, 40);
+    padding: 20px 30px;
+    border-radius: 4rem;
+    width: fit-content;
+    text-transform: uppercase;
+    color: wheat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: progress;
+}
+.add>span{
+    z-index: 2;
+}
+.add>div{
+    position: absolute;
+    background-color: var(--orange);
+    width: 5rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: antiquewhite;
+    text-overflow: inherit;
+}
+
+.text>div:nth-of-type(3){
+    font-size:small;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+    align-items: baseline;
+}
+.figure{
+    display: flex;
+    gap: 2rem;
+}
+
+.figure>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.figure>div>span:nth-of-type(1){
+    font-size: 4rem;
+    color: white;
+}
+.figure>div>span:nth-of-type(2){
+    font-size: 2rem;
+    color: gray;
+    text-transform: uppercase;
+}
+.left-h>.in-buttons{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+  
+
+.in-buttons>div>.btn1{
+    row-gap: 10rem;
+    cursor: pointer;
+    gap: 10rem;
+    background-color:transparent ;
+    padding: 0.5rem;
+    font-weight: bold;
+    transition: 300ms all;
+    border: 4px solid white;   
+}
+.in-buttons>div>.btn1:hover{
+    cursor: pointer;
+    background-color: #f46207;
+    color: black;
+    text-align: center;
+    border: 4px solid transparent;  
+} 
+
+.right-h>.btn{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    gap: 2rem;
+    color: black;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--darkgray);
+    width: fit-content;
+    padding: 1rem;
+    align-items: start;
+    position: absolute;
+    border-radius: 1rem;
+    right: 1rem;
+    top: 7rem;
+}
+.heart-rate>span>img{
+    top: 1rem;
+    width: 2rem;
+    align-self: center;
+}
+.heart-rate>span:nth-of-type(1){
+    color: lightgray;
+    font-size: 1rem;
+}
+
+.heart-rate>span:nth-of-type(2){
+    font-size: 3rem;
+}
+.hero-img{
+    position: absolute ;
+    right: 55%;
+    top: 10rem;
+    width: 23rem;
+}
+.back{
+    z-index: -1;
+    position: absolute;
+    right: 23rem;
+    width: 23rem;
+    top:4rem;
+
+}
+
+.calories{
+    display: flex;
+    gap: 2rem;
+    background-color: var(--colorCard);
+    border-radius: 5px;
+    padding: 1rem;
+    position: relative;
+    width: fit-content;
+    top: 38rem;
+    right: 34rem;
+}
+.calories>.cal{
+    width: 3rem;
+}
+
+.calories>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories>.div1> :nth-child(1){
+    color: gray;
+    font-size: .75rem;
+
+}
+.calories>.div1> :nth-child(2){
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+.blur-he{
+    width: 30rem;
+    height: 30rem;
+    left: 0;
+}
+
+@media screen and (max-width:768px) {
+    .hero{
+        flex-direction: column;
+    }
+    .blur-he{
+        width: 14rem;
+    }
+    .add{
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+
+    .text{
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .text>.tes>span{
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    
+    .text>div:nth-of-type(3){
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .in-buttons{
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .figure>div>span:nth-of-type(1){
+        font-size: large;
+    }
+
+    .figure>div>span:nth-of-type(2){
+        font-size: small;
+    }
+    .heart-rate{
+        left: 1rem;
+        top: 2rem;
+        transform: scale(0.8);
+    }
+    .calories{
+        position: relative;
+        top: 0rem;
+        left: 2rem;
+    }
+    .calories>img{
+        transform: scale(0.8);
+        width: 2rem;
+    }
+    .calories>div>:nth-child(2){
+        color: white;
+        font-size: 1rem;
+    }
+    .hero-img{
+        position: relative;
+        width: 15rem;
+        left: 11rem;
+        top: 4rem;
+        align-self: center;
+        transform: scale(1.8);
+    }
+}

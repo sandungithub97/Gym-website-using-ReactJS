@@ -1,0 +1,78 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+:root{
+  --lightgray: #d9d9d9;
+  --gray: #9c9c9c;
+  --orange: #f48915;
+  --colorCard: #464d53;
+  --darkgray: #656565;
+  --planCard: Linear-gradient(210.41deg, #fa5042, #ffa739 100.75%);
+  --appColor: #3c3f45;
+
+}
+
+.App{
+  background-image: url();
+  mix-blend-mode: overlay;
+  background-color: var(--appColor);
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.stroke{
+  color: transparent;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: orange;
+  font-size: 5rem;
+}
+.btn{
+  background-color:transparent ;
+  padding: 0.5rem;
+  font-weight: bold;
+  transition: 300ms all;
+  border: 4px solid white; 
+  gap: 3rem;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: #f46207;
+  color: black;
+  text-align: center;
+  border: 4px solid transparent;
+}
+
+.blur{
+  background: rgba(255, 127, 80, .6);
+  position: absolute;
+  border-radius: 10%;
+  filter: blur(212px);
+  z-index: -9;
+}
+
+@media screen and (max-width:768px) {
+  .App{
+    background-image: url();
+    mix-blend-mode: overlay;
+    background-color: var(--appColor);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: hidden;
+  }
+
+}
